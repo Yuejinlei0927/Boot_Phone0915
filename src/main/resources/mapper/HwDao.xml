@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.isoft.boots.dao.HwDao">
+
+    <resultMap type="com.isoft.boots.entity.Hw" id="HwMap">
+        <result property="hwId" column="hw_id" jdbcType="INTEGER"/>
+        <result property="brandName" column="brand_name" jdbcType="VARCHAR"/>
+        <result property="hwName" column="hw_name" jdbcType="VARCHAR"/>
+        <result property="hwPrice" column="hw_price" jdbcType="INTEGER"/>
+        <result property="hwCount" column="hw_count" jdbcType="INTEGER"/>
+        <result property="hwSales" column="hw_sales" jdbcType="INTEGER"/>
+        <result property="hwViews" column="hw_views" jdbcType="VARCHAR"/>
+        <result property="hwImg" column="hw_img" jdbcType="VARCHAR"/>
+        <result property="imgL" column="img_l" jdbcType="VARCHAR"/>
+        <result property="imgR" column="img_r" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="HwMap">
+        select
+          hw_id, brand_name, hw_name, hw_price, hw_count, hw_sales, hw_views, hw_img, img_l, img_r
+        from db_leyou.hw
+        where hw_id = #{hwId}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="HwMap">
+        select
+          hw_id, brand_name, hw_name, hw_price, hw_count, hw_sales, hw_views, hw_img, img_l, img_r
+        from db_leyou.hw
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="HwMap">
+        select
+        hw_id, brand_name, hw_name, hw_price, hw_count, hw_sales, hw_views, hw_img, img_l, img_r
+        from db_leyou.hw
+        <where>
+            <if test="hwId != null">
+                and hw_id = #{hwId}
+            </if>
+            <if test="brandName != null and brandName != ''">
+                and brand_name = #{brandName}
+            </if>
+            <if test="hwName != null and hwName != ''">
+                and hw_name = #{hwName}
+            </if>
+            <if test="hwPrice != null">
+                and hw_price = #{hwPrice}
+            </if>
+            <if test="hwCount != null">
+                and hw_count = #{hwCount}
+            </if>
+            <if test="hwSales != null">
+                and hw_sales = #{hwSales}
+            </if>
+            <if test="hwViews != null and hwViews != ''">
+                and hw_views = #{hwViews}
+            </if>
+            <if test="hwImg != null and hwImg != ''">
+                and hw_img = #{hwImg}
+            </if>
+            <if test="imgL != null and imgL != ''">
+                and img_l = #{imgL}
+            </if>
+            <if test="imgR != null and imgR != ''">
+                and img_r = #{imgR}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="hwId" useGeneratedKeys="true">
+        insert into db_leyou.hw(brand_name, hw_name, hw_price, hw_count, hw_sales, hw_views, hw_img, img_l, img_r)
+        values (#{brandName}, #{hwName}, #{hwPrice}, #{hwCount}, #{hwSales}, #{hwViews}, #{hwImg}, #{imgL}, #{imgR})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update db_leyou.hw
+        <set>
+            <if test="brandName != null and brandName != ''">
+                brand_name = #{brandName},
+            </if>
+            <if test="hwName != null and hwName != ''">
+                hw_name = #{hwName},
+            </if>
+            <if test="hwPrice != null">
+                hw_price = #{hwPrice},
+            </if>
+            <if test="hwCount != null">
+                hw_count = #{hwCount},
+            </if>
+            <if test="hwSales != null">
+                hw_sales = #{hwSales},
+            </if>
+            <if test="hwViews != null and hwViews != ''">
+                hw_views = #{hwViews},
+            </if>
+            <if test="hwImg != null and hwImg != ''">
+                hw_img = #{hwImg},
+            </if>
+            <if test="imgL != null and imgL != ''">
+                img_l = #{imgL},
+            </if>
+            <if test="imgR != null and imgR != ''">
+                img_r = #{imgR},
+            </if>
+        </set>
+        where hw_id = #{hwId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from db_leyou.hw where hw_id = #{hwId}
+    </delete>
+
+</mapper>

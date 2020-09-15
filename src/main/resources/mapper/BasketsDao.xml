@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.isoft.boots.dao.BasketsDao">
+
+    <resultMap type="com.isoft.boots.entity.Baskets" id="BasketsMap">
+        <result property="basketIds" column="basket_ids" jdbcType="INTEGER"/>
+        <result property="hwIds" column="hw_ids" jdbcType="INTEGER"/>
+        <result property="partIds" column="part_ids" jdbcType="INTEGER"/>
+        <result property="userIds" column="user_ids" jdbcType="INTEGER"/>
+        <result property="countIds" column="count_ids" jdbcType="INTEGER"/>
+        <result property="statusIds" column="status_ids" jdbcType="VARCHAR"/>
+        <result property="backIds" column="back_ids" jdbcType="VARCHAR"/>
+        <result property="adddatetime" column="adddatetime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="BasketsMap">
+        select
+          basket_ids, hw_ids, part_ids, user_ids, count_ids, status_ids, back_ids, adddatetime
+        from db_leyou.baskets
+        where basket_ids = #{basketIds}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="BasketsMap">
+        select
+          basket_ids, hw_ids, part_ids, user_ids, count_ids, status_ids, back_ids, adddatetime
+        from db_leyou.baskets
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="BasketsMap">
+        select
+        basket_ids, hw_ids, part_ids, user_ids, count_ids, status_ids, back_ids, adddatetime
+        from db_leyou.baskets
+        <where>
+            <if test="basketIds != null">
+                and basket_ids = #{basketIds}
+            </if>
+            <if test="hwIds != null">
+                and hw_ids = #{hwIds}
+            </if>
+            <if test="partIds != null">
+                and part_ids = #{partIds}
+            </if>
+            <if test="userIds != null">
+                and user_ids = #{userIds}
+            </if>
+            <if test="countIds != null">
+                and count_ids = #{countIds}
+            </if>
+            <if test="statusIds != null and statusIds != ''">
+                and status_ids = #{statusIds}
+            </if>
+            <if test="backIds != null and backIds != ''">
+                and back_ids = #{backIds}
+            </if>
+            <if test="adddatetime != null">
+                and adddatetime = #{adddatetime}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="basketIds" useGeneratedKeys="true">
+        insert into db_leyou.baskets(hw_ids, part_ids, user_ids, count_ids, status_ids, back_ids, adddatetime)
+        values (#{hwIds}, #{partIds}, #{userIds}, #{countIds}, #{statusIds}, #{backIds}, #{adddatetime})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update db_leyou.baskets
+        <set>
+            <if test="hwIds != null">
+                hw_ids = #{hwIds},
+            </if>
+            <if test="partIds != null">
+                part_ids = #{partIds},
+            </if>
+            <if test="userIds != null">
+                user_ids = #{userIds},
+            </if>
+            <if test="countIds != null">
+                count_ids = #{countIds},
+            </if>
+            <if test="statusIds != null and statusIds != ''">
+                status_ids = #{statusIds},
+            </if>
+            <if test="backIds != null and backIds != ''">
+                back_ids = #{backIds},
+            </if>
+            <if test="adddatetime != null">
+                adddatetime = #{adddatetime},
+            </if>
+        </set>
+        where basket_ids = #{basketIds}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from db_leyou.baskets where basket_ids = #{basketIds}
+    </delete>
+
+</mapper>

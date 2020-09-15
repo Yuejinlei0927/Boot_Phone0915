@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.isoft.boots.dao.NewsDao">
+
+    <resultMap type="com.isoft.boots.entity.News" id="NewsMap">
+        <result property="newsId" column="news_id" jdbcType="INTEGER"/>
+        <result property="newsTitle" column="news_title" jdbcType="VARCHAR"/>
+        <result property="newsContent" column="news_content" jdbcType="VARCHAR"/>
+        <result property="newsFrom" column="news_from" jdbcType="VARCHAR"/>
+        <result property="newsTime" column="news_time" jdbcType="TIMESTAMP"/>
+        <result property="newsDetail" column="news_detail" jdbcType="VARCHAR"/>
+        <result property="newsUp" column="news_up" jdbcType="VARCHAR"/>
+        <result property="newsDown" column="news_down" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="NewsMap">
+        select
+          news_id, news_title, news_content, news_from, news_time, news_detail, news_up, news_down
+        from db_leyou.news
+        where news_id = #{newsId}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="NewsMap">
+        select
+          news_id, news_title, news_content, news_from, news_time, news_detail, news_up, news_down
+        from db_leyou.news
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="NewsMap">
+        select
+        news_id, news_title, news_content, news_from, news_time, news_detail, news_up, news_down
+        from db_leyou.news
+        <where>
+            <if test="newsId != null">
+                and news_id = #{newsId}
+            </if>
+            <if test="newsTitle != null and newsTitle != ''">
+                and news_title = #{newsTitle}
+            </if>
+            <if test="newsContent != null and newsContent != ''">
+                and news_content = #{newsContent}
+            </if>
+            <if test="newsFrom != null and newsFrom != ''">
+                and news_from = #{newsFrom}
+            </if>
+            <if test="newsTime != null">
+                and news_time = #{newsTime}
+            </if>
+            <if test="newsDetail != null and newsDetail != ''">
+                and news_detail = #{newsDetail}
+            </if>
+            <if test="newsUp != null and newsUp != ''">
+                and news_up = #{newsUp}
+            </if>
+            <if test="newsDown != null and newsDown != ''">
+                and news_down = #{newsDown}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="newsId" useGeneratedKeys="true">
+        insert into db_leyou.news(news_title, news_content, news_from, news_time, news_detail, news_up, news_down)
+        values (#{newsTitle}, #{newsContent}, #{newsFrom}, #{newsTime}, #{newsDetail}, #{newsUp}, #{newsDown})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update db_leyou.news
+        <set>
+            <if test="newsTitle != null and newsTitle != ''">
+                news_title = #{newsTitle},
+            </if>
+            <if test="newsContent != null and newsContent != ''">
+                news_content = #{newsContent},
+            </if>
+            <if test="newsFrom != null and newsFrom != ''">
+                news_from = #{newsFrom},
+            </if>
+            <if test="newsTime != null">
+                news_time = #{newsTime},
+            </if>
+            <if test="newsDetail != null and newsDetail != ''">
+                news_detail = #{newsDetail},
+            </if>
+            <if test="newsUp != null and newsUp != ''">
+                news_up = #{newsUp},
+            </if>
+            <if test="newsDown != null and newsDown != ''">
+                news_down = #{newsDown},
+            </if>
+        </set>
+        where news_id = #{newsId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from db_leyou.news where news_id = #{newsId}
+    </delete>
+
+</mapper>

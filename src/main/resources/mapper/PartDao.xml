@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.isoft.boots.dao.PartDao">
+
+    <resultMap type="com.isoft.boots.entity.Part" id="PartMap">
+        <result property="partId" column="part_id" jdbcType="INTEGER"/>
+        <result property="partName" column="part_name" jdbcType="VARCHAR"/>
+        <result property="partPrice" column="part_price" jdbcType="INTEGER"/>
+        <result property="partCount" column="part_count" jdbcType="INTEGER"/>
+        <result property="partSales" column="part_sales" jdbcType="INTEGER"/>
+        <result property="partDesc" column="part_desc" jdbcType="VARCHAR"/>
+        <result property="partImg" column="part_img" jdbcType="VARCHAR"/>
+        <result property="imgL" column="img_l" jdbcType="VARCHAR"/>
+        <result property="imgR" column="img_r" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="PartMap">
+        select
+          part_id, part_name, part_price, part_count, part_sales, part_desc, part_img, img_l, img_r
+        from db_leyou.part
+        where part_id = #{partId}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="PartMap">
+        select
+          part_id, part_name, part_price, part_count, part_sales, part_desc, part_img, img_l, img_r
+        from db_leyou.part
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="PartMap">
+        select
+        part_id, part_name, part_price, part_count, part_sales, part_desc, part_img, img_l, img_r
+        from db_leyou.part
+        <where>
+            <if test="partId != null">
+                and part_id = #{partId}
+            </if>
+            <if test="partName != null and partName != ''">
+                and part_name = #{partName}
+            </if>
+            <if test="partPrice != null">
+                and part_price = #{partPrice}
+            </if>
+            <if test="partCount != null">
+                and part_count = #{partCount}
+            </if>
+            <if test="partSales != null">
+                and part_sales = #{partSales}
+            </if>
+            <if test="partDesc != null and partDesc != ''">
+                and part_desc = #{partDesc}
+            </if>
+            <if test="partImg != null and partImg != ''">
+                and part_img = #{partImg}
+            </if>
+            <if test="imgL != null and imgL != ''">
+                and img_l = #{imgL}
+            </if>
+            <if test="imgR != null and imgR != ''">
+                and img_r = #{imgR}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="partId" useGeneratedKeys="true">
+        insert into db_leyou.part(part_name, part_price, part_count, part_sales, part_desc, part_img, img_l, img_r)
+        values (#{partName}, #{partPrice}, #{partCount}, #{partSales}, #{partDesc}, #{partImg}, #{imgL}, #{imgR})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update db_leyou.part
+        <set>
+            <if test="partName != null and partName != ''">
+                part_name = #{partName},
+            </if>
+            <if test="partPrice != null">
+                part_price = #{partPrice},
+            </if>
+            <if test="partCount != null">
+                part_count = #{partCount},
+            </if>
+            <if test="partSales != null">
+                part_sales = #{partSales},
+            </if>
+            <if test="partDesc != null and partDesc != ''">
+                part_desc = #{partDesc},
+            </if>
+            <if test="partImg != null and partImg != ''">
+                part_img = #{partImg},
+            </if>
+            <if test="imgL != null and imgL != ''">
+                img_l = #{imgL},
+            </if>
+            <if test="imgR != null and imgR != ''">
+                img_r = #{imgR},
+            </if>
+        </set>
+        where part_id = #{partId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from db_leyou.part where part_id = #{partId}
+    </delete>
+
+</mapper>

@@ -1,0 +1,33 @@
+2020-06-10 08:04:29.767  INFO 22489 --- [restartedMain] com.isoft.boot.BootApplication           : Starting BootApplication on steampunkdeMacBook-Pro.local with PID 22489 (/Users/steampunk/Desktop/Boot_Phone/target/classes started by steampunk in /Users/steampunk/Desktop/Boot_Phone)
+2020-06-10 08:04:29.772  INFO 22489 --- [restartedMain] com.isoft.boot.BootApplication           : No active profile set, falling back to default profiles: default
+2020-06-10 08:04:29.856  INFO 22489 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-06-10 08:04:29.857  INFO 22489 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-06-10 08:04:31.391  INFO 22489 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-10 08:04:31.400  INFO 22489 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-10 08:04:31.401  INFO 22489 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-06-10 08:04:31.472  INFO 22489 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-10 08:04:31.472  INFO 22489 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1615 ms
+2020-06-10 08:04:32.239  INFO 22489 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-10 08:04:32.318  INFO 22489 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-06-10 08:04:32.374  WARN 22489 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-06-10 08:04:32.500  WARN 22489 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-06-10 08:04:32.550  INFO 22489 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-06-10 08:04:32.566  INFO 22489 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-10 08:04:32.573 ERROR 22489 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2020-06-10 08:04:32.578  INFO 22489 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-10 08:04:32.579  INFO 22489 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...

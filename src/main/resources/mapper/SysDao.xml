@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.isoft.boots.dao.SysDao">
+
+    <resultMap type="com.isoft.boots.entity.Sys" id="SysMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="sysName" column="sys_name" jdbcType="VARCHAR"/>
+        <result property="sysPass" column="sys_pass" jdbcType="VARCHAR"/>
+        <result property="sysRole" column="sys_role" jdbcType="VARCHAR"/>
+        <result property="sysImg" column="sys_img" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="SysMap">
+        select
+          id, sys_name, sys_pass, sys_role, sys_img
+        from db_leyou.sys
+        where id = #{id}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="SysMap">
+        select
+          id, sys_name, sys_pass, sys_role, sys_img
+        from db_leyou.sys
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="SysMap">
+        select
+        id, sys_name, sys_pass, sys_role, sys_img
+        from db_leyou.sys
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="sysName != null and sysName != ''">
+                and sys_name = #{sysName}
+            </if>
+            <if test="sysPass != null and sysPass != ''">
+                and sys_pass = #{sysPass}
+            </if>
+            <if test="sysRole != null and sysRole != ''">
+                and sys_role = #{sysRole}
+            </if>
+            <if test="sysImg != null and sysImg != ''">
+                and sys_img = #{sysImg}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into db_leyou.sys(sys_name, sys_pass, sys_role, sys_img)
+        values (#{sysName}, #{sysPass}, #{sysRole}, #{sysImg})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update db_leyou.sys
+        <set>
+            <if test="sysName != null and sysName != ''">
+                sys_name = #{sysName},
+            </if>
+            <if test="sysPass != null and sysPass != ''">
+                sys_pass = #{sysPass},
+            </if>
+            <if test="sysRole != null and sysRole != ''">
+                sys_role = #{sysRole},
+            </if>
+            <if test="sysImg != null and sysImg != ''">
+                sys_img = #{sysImg},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from db_leyou.sys where id = #{id}
+    </delete>
+
+</mapper>
