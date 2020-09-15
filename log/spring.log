@@ -1,0 +1,331 @@
+2020-09-15 09:39:58.298  INFO 1127 --- [main] com.isoft.boot.BootApplicationTests      : Starting BootApplicationTests on Paul with PID 1127 (started by pualfrank in /Users/pualfrank/Desktop/Boot_Phone)
+2020-09-15 09:39:58.307  INFO 1127 --- [main] com.isoft.boot.BootApplicationTests      : No active profile set, falling back to default profiles: default
+2020-09-15 09:40:01.697  INFO 1127 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-15 09:40:02.041  WARN 1127 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-09-15 09:40:02.206  INFO 1127 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-09-15 09:40:02.308  INFO 1127 --- [main] com.isoft.boot.BootApplicationTests      : Started BootApplicationTests in 4.493 seconds (JVM running for 5.895)
+2020-09-15 09:40:02.759  INFO 1127 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-15 09:40:03.494 DEBUG 1127 --- [main] com.isoft.boot.dao.BrandDao.selectList   : ==>  Preparing: SELECT brand_id AS id,brand_img AS brandImg,brand_name,brand_desc AS brandDesc FROM brand WHERE (brand_name LIKE ?) 
+2020-09-15 09:40:03.529 DEBUG 1127 --- [main] com.isoft.boot.dao.BrandDao.selectList   : ==> Parameters: %A%(String)
+2020-09-15 09:40:03.563 DEBUG 1127 --- [main] com.isoft.boot.dao.BrandDao.selectList   : <==      Total: 4
+2020-09-15 09:40:03.632  INFO 1127 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-09-15 09:40:03.633  INFO 1127 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-15 09:40:03.635  INFO 1127 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-09-15 09:40:03.643  INFO 1127 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-09-15 09:40:31.218  INFO 1188 --- [restartedMain] com.isoft.boot.BootApplication           : Starting BootApplication on Paul with PID 1188 (/Users/pualfrank/Desktop/Boot_Phone/target/classes started by pualfrank in /Users/pualfrank/Desktop/Boot_Phone)
+2020-09-15 09:40:31.222  INFO 1188 --- [restartedMain] com.isoft.boot.BootApplication           : No active profile set, falling back to default profiles: default
+2020-09-15 09:40:31.290  INFO 1188 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-15 09:40:31.290  INFO 1188 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-15 09:40:32.659  INFO 1188 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-15 09:40:32.668  INFO 1188 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-15 09:40:32.668  INFO 1188 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-09-15 09:40:32.735  INFO 1188 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-15 09:40:32.736  INFO 1188 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1446 ms
+2020-09-15 09:40:33.363  INFO 1188 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-15 09:40:33.475  WARN 1188 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-09-15 09:40:33.538  INFO 1188 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-09-15 09:40:33.583  INFO 1188 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-15 09:40:33.640  INFO 1188 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-15 09:40:33.644  INFO 1188 --- [restartedMain] com.isoft.boot.BootApplication           : Started BootApplication in 2.842 seconds (JVM running for 3.489)
+2020-09-15 09:40:37.491  INFO 1188 --- [Thread-10] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-09-15 09:40:37.492  INFO 1188 --- [Thread-10] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-15 09:40:37.493  INFO 1188 --- [Thread-10] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-09-15 09:40:37.647  INFO 1188 --- [restartedMain] com.isoft.boot.BootApplication           : Starting BootApplication on Paul with PID 1188 (/Users/pualfrank/Desktop/Boot_Phone/target/classes started by pualfrank in /Users/pualfrank/Desktop/Boot_Phone)
+2020-09-15 09:40:37.647  INFO 1188 --- [restartedMain] com.isoft.boot.BootApplication           : No active profile set, falling back to default profiles: default
+2020-09-15 09:40:37.966  INFO 1188 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-15 09:40:37.967  INFO 1188 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-15 09:40:37.968  INFO 1188 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-09-15 09:40:37.981  INFO 1188 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-15 09:40:37.981  INFO 1188 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 330 ms
+2020-09-15 09:40:38.229  INFO 1188 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-15 09:40:38.287  WARN 1188 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-09-15 09:40:38.321  INFO 1188 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-09-15 09:40:38.343  INFO 1188 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-15 09:40:38.360  INFO 1188 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-15 09:40:38.361  INFO 1188 --- [restartedMain] com.isoft.boot.BootApplication           : Started BootApplication in 0.739 seconds (JVM running for 8.206)
+2020-09-15 09:40:38.363  INFO 1188 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-09-15 09:41:45.550  INFO 1188 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-15 09:41:45.550  INFO 1188 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-15 09:41:45.556  INFO 1188 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-09-15 09:42:17.344  INFO 1188 --- [Thread-18] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-09-15 09:42:17.345  INFO 1188 --- [Thread-18] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-15 09:42:17.346  INFO 1188 --- [Thread-18] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-09-15 09:42:17.493  INFO 1188 --- [restartedMain] com.isoft.boot.BootApplication           : Starting BootApplication on Paul with PID 1188 (/Users/pualfrank/Desktop/Boot_Phone/target/classes started by pualfrank in /Users/pualfrank/Desktop/Boot_Phone)
+2020-09-15 09:42:17.494  INFO 1188 --- [restartedMain] com.isoft.boot.BootApplication           : No active profile set, falling back to default profiles: default
+2020-09-15 09:42:17.767  INFO 1188 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-15 09:42:17.768  INFO 1188 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-15 09:42:17.768  INFO 1188 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-09-15 09:42:17.776  INFO 1188 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-15 09:42:17.777  INFO 1188 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 280 ms
+2020-09-15 09:42:18.012  INFO 1188 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-15 09:42:18.058  WARN 1188 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-09-15 09:42:18.086  INFO 1188 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-09-15 09:42:18.108  INFO 1188 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-15 09:42:18.129  INFO 1188 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-15 09:42:18.129  INFO 1188 --- [restartedMain] com.isoft.boot.BootApplication           : Started BootApplication in 0.661 seconds (JVM running for 107.976)
+2020-09-15 09:42:18.131  INFO 1188 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-09-15 09:42:22.237  INFO 1188 --- [Thread-23] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-09-15 09:42:22.239  INFO 1188 --- [Thread-23] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-15 09:42:22.239  INFO 1188 --- [Thread-23] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-09-15 09:42:22.384  INFO 1188 --- [restartedMain] com.isoft.boot.BootApplication           : Starting BootApplication on Paul with PID 1188 (/Users/pualfrank/Desktop/Boot_Phone/target/classes started by pualfrank in /Users/pualfrank/Desktop/Boot_Phone)
+2020-09-15 09:42:22.385  INFO 1188 --- [restartedMain] com.isoft.boot.BootApplication           : No active profile set, falling back to default profiles: default
+2020-09-15 09:42:22.570  INFO 1188 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-15 09:42:22.571  INFO 1188 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-15 09:42:22.571  INFO 1188 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-09-15 09:42:22.578  INFO 1188 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-15 09:42:22.578  INFO 1188 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 189 ms
+2020-09-15 09:42:22.784  INFO 1188 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-15 09:42:22.825  WARN 1188 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-09-15 09:42:22.854  INFO 1188 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-09-15 09:42:22.877  INFO 1188 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-15 09:42:22.893  INFO 1188 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-15 09:42:22.893  INFO 1188 --- [restartedMain] com.isoft.boot.BootApplication           : Started BootApplication in 0.531 seconds (JVM running for 112.74)
+2020-09-15 09:42:22.895  INFO 1188 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-09-15 09:42:29.860  INFO 1188 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-09-15 09:42:29.861  INFO 1188 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-15 09:42:29.861  INFO 1188 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-09-15 09:53:18.571  INFO 1510 --- [restartedMain] com.isoft.boot.BootApplication           : Starting BootApplication on Paul with PID 1510 (/Users/pualfrank/Desktop/Boot_Phone/target/classes started by pualfrank in /Users/pualfrank/Desktop/Boot_Phone)
+2020-09-15 09:53:18.574  INFO 1510 --- [restartedMain] com.isoft.boot.BootApplication           : No active profile set, falling back to default profiles: default
+2020-09-15 09:53:18.642  INFO 1510 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-15 09:53:18.643  INFO 1510 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-15 09:53:19.908  INFO 1510 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-15 09:53:19.915  INFO 1510 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-15 09:53:19.916  INFO 1510 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-09-15 09:53:19.970  INFO 1510 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-15 09:53:19.970  INFO 1510 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1327 ms
+2020-09-15 09:53:20.672  INFO 1510 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-15 09:53:20.763  INFO 1510 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-09-15 09:53:20.826  WARN 1510 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-09-15 09:53:20.912  INFO 1510 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-09-15 09:53:20.981  INFO 1510 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-15 09:53:21.055  INFO 1510 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-15 09:53:21.059  INFO 1510 --- [restartedMain] com.isoft.boot.BootApplication           : Started BootApplication in 2.862 seconds (JVM running for 3.512)
+2020-09-15 09:53:53.175  INFO 1510 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-15 09:53:53.177  INFO 1510 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-15 09:53:53.185  INFO 1510 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-09-15 09:54:03.049  INFO 1510 --- [http-nio-8080-exec-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-15 09:54:03.365 DEBUG 1510 --- [http-nio-8080-exec-5] com.isoft.boot.dao.BasketDao.selectBack  : ==>  Preparing: select * from baskets where hw_ids = ? 
+2020-09-15 09:54:03.365 DEBUG 1510 --- [http-nio-8080-exec-10] com.isoft.boot.dao.PhoneDao.selectById   : ==>  Preparing: SELECT hw_id,hw_count,hw_price,hw_name,hw_img,hw_sales,hw_views,img_l,brand_name,img_r FROM hw WHERE hw_id=? 
+2020-09-15 09:54:03.383 DEBUG 1510 --- [http-nio-8080-exec-10] com.isoft.boot.dao.PhoneDao.selectById   : ==> Parameters: 4(Integer)
+2020-09-15 09:54:03.383 DEBUG 1510 --- [http-nio-8080-exec-5] com.isoft.boot.dao.BasketDao.selectBack  : ==> Parameters: 4(Integer)
+2020-09-15 09:54:03.404 DEBUG 1510 --- [http-nio-8080-exec-10] com.isoft.boot.dao.PhoneDao.selectById   : <==      Total: 1
+2020-09-15 09:54:03.405 DEBUG 1510 --- [http-nio-8080-exec-5] com.isoft.boot.dao.BasketDao.selectBack  : <==      Total: 2
+2020-09-15 09:54:08.997 DEBUG 1510 --- [http-nio-8080-exec-4] com.isoft.boot.dao.PhoneDao.selectById   : ==>  Preparing: SELECT hw_id,hw_count,hw_price,hw_name,hw_img,hw_sales,hw_views,img_l,brand_name,img_r FROM hw WHERE hw_id=? 
+2020-09-15 09:54:08.997 DEBUG 1510 --- [http-nio-8080-exec-10] com.isoft.boot.dao.BasketDao.selectBack  : ==>  Preparing: select * from baskets where hw_ids = ? 
+2020-09-15 09:54:08.998 DEBUG 1510 --- [http-nio-8080-exec-4] com.isoft.boot.dao.PhoneDao.selectById   : ==> Parameters: 4(Integer)
+2020-09-15 09:54:08.998 DEBUG 1510 --- [http-nio-8080-exec-10] com.isoft.boot.dao.BasketDao.selectBack  : ==> Parameters: 4(Integer)
+2020-09-15 09:54:09.001 DEBUG 1510 --- [http-nio-8080-exec-4] com.isoft.boot.dao.PhoneDao.selectById   : <==      Total: 1
+2020-09-15 09:54:09.001 DEBUG 1510 --- [http-nio-8080-exec-10] com.isoft.boot.dao.BasketDao.selectBack  : <==      Total: 2
+2020-09-15 09:55:08.071 DEBUG 1510 --- [http-nio-8080-exec-7] com.isoft.boot.dao.UserDao.insert        : ==>  Preparing: INSERT INTO user ( user_pass, user_tel, user_email, user_name ) VALUES ( ?, ?, ?, ? ) 
+2020-09-15 09:55:08.072 DEBUG 1510 --- [http-nio-8080-exec-7] com.isoft.boot.dao.UserDao.insert        : ==> Parameters: asd123(String), 13475312976(String), 2503344653@qq.com(String), yuange(String)
+2020-09-15 09:55:08.098 DEBUG 1510 --- [http-nio-8080-exec-7] com.isoft.boot.dao.UserDao.insert        : <==    Updates: 1
+2020-09-15 09:55:35.762 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.UserDao.checkName     : ==>  Preparing: select count(*) from user where user_name=? 
+2020-09-15 09:55:35.763 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.UserDao.checkName     : ==> Parameters: yuange(String)
+2020-09-15 09:55:35.769 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.UserDao.checkName     : <==      Total: 1
+2020-09-15 09:55:35.771 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.UserDao.login         : ==>  Preparing: SELECT * from user where user_name=? and user_pass=? 
+2020-09-15 09:55:35.771 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.UserDao.login         : ==> Parameters: yuange(String), asd123(String)
+2020-09-15 09:55:35.773 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.UserDao.login         : <==      Total: 1
+2020-09-15 09:55:35.777 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.UserDao.selectList    : ==>  Preparing: SELECT user_id,adddatetime,user_pass,user_tel,user_email,user_name FROM user 
+2020-09-15 09:55:35.777 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.UserDao.selectList    : ==> Parameters: 
+2020-09-15 09:55:35.779 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.UserDao.selectList    : <==      Total: 4
+2020-09-15 09:55:40.202 DEBUG 1510 --- [http-nio-8080-exec-5] c.isoft.boot.dao.BasketDao.getByUserId   : ==>  Preparing: select * from baskets where user_ids = ? 
+2020-09-15 09:55:40.203 DEBUG 1510 --- [http-nio-8080-exec-5] c.isoft.boot.dao.BasketDao.getByUserId   : ==> Parameters: 4(Integer)
+2020-09-15 09:55:40.204 DEBUG 1510 --- [http-nio-8080-exec-5] c.isoft.boot.dao.BasketDao.getByUserId   : <==      Total: 0
+2020-09-15 09:55:48.079 DEBUG 1510 --- [http-nio-8080-exec-7] com.isoft.boot.dao.PhoneDao.selectById   : ==>  Preparing: SELECT hw_id,hw_count,hw_price,hw_name,hw_img,hw_sales,hw_views,img_l,brand_name,img_r FROM hw WHERE hw_id=? 
+2020-09-15 09:55:48.080 DEBUG 1510 --- [http-nio-8080-exec-7] com.isoft.boot.dao.PhoneDao.selectById   : ==> Parameters: 7(Integer)
+2020-09-15 09:55:48.083 DEBUG 1510 --- [http-nio-8080-exec-7] com.isoft.boot.dao.PhoneDao.selectById   : <==      Total: 1
+2020-09-15 09:55:48.088 DEBUG 1510 --- [http-nio-8080-exec-10] com.isoft.boot.dao.BasketDao.selectBack  : ==>  Preparing: select * from baskets where hw_ids = ? 
+2020-09-15 09:55:48.089 DEBUG 1510 --- [http-nio-8080-exec-10] com.isoft.boot.dao.BasketDao.selectBack  : ==> Parameters: 7(Integer)
+2020-09-15 09:55:48.090 DEBUG 1510 --- [http-nio-8080-exec-10] com.isoft.boot.dao.BasketDao.selectBack  : <==      Total: 0
+2020-09-15 09:55:50.055 DEBUG 1510 --- [http-nio-8080-exec-7] com.isoft.boot.dao.PhoneDao.selectById   : ==>  Preparing: SELECT hw_id,hw_count,hw_price,hw_name,hw_img,hw_sales,hw_views,img_l,brand_name,img_r FROM hw WHERE hw_id=? 
+2020-09-15 09:55:50.055 DEBUG 1510 --- [http-nio-8080-exec-5] com.isoft.boot.dao.BasketDao.selectBack  : ==>  Preparing: select * from baskets where hw_ids = ? 
+2020-09-15 09:55:50.056 DEBUG 1510 --- [http-nio-8080-exec-5] com.isoft.boot.dao.BasketDao.selectBack  : ==> Parameters: 7(Integer)
+2020-09-15 09:55:50.056 DEBUG 1510 --- [http-nio-8080-exec-7] com.isoft.boot.dao.PhoneDao.selectById   : ==> Parameters: 7(Integer)
+2020-09-15 09:55:50.057 DEBUG 1510 --- [http-nio-8080-exec-5] com.isoft.boot.dao.BasketDao.selectBack  : <==      Total: 0
+2020-09-15 09:55:50.057 DEBUG 1510 --- [http-nio-8080-exec-7] com.isoft.boot.dao.PhoneDao.selectById   : <==      Total: 1
+2020-09-15 09:55:57.298 DEBUG 1510 --- [http-nio-8080-exec-9] com.isoft.boot.dao.BasketDao.insert      : ==>  Preparing: INSERT INTO baskets ( user_ids, hw_ids, count_ids ) VALUES ( ?, ?, ? ) 
+2020-09-15 09:55:57.298 DEBUG 1510 --- [http-nio-8080-exec-9] com.isoft.boot.dao.BasketDao.insert      : ==> Parameters: 4(Integer), 7(Integer), 2(Integer)
+2020-09-15 09:55:57.300 DEBUG 1510 --- [http-nio-8080-exec-9] com.isoft.boot.dao.BasketDao.insert      : <==    Updates: 1
+2020-09-15 09:56:02.265 DEBUG 1510 --- [http-nio-8080-exec-5] c.isoft.boot.dao.BasketDao.getByUserId   : ==>  Preparing: select * from baskets where user_ids = ? 
+2020-09-15 09:56:02.265 DEBUG 1510 --- [http-nio-8080-exec-5] c.isoft.boot.dao.BasketDao.getByUserId   : ==> Parameters: 4(Integer)
+2020-09-15 09:56:02.269 DEBUG 1510 --- [http-nio-8080-exec-5] c.isoft.boot.dao.BasketDao.getByUserId   : <==      Total: 1
+2020-09-15 09:56:02.275 DEBUG 1510 --- [http-nio-8080-exec-5] com.isoft.boot.dao.PhoneDao.selectById   : ==>  Preparing: SELECT hw_id,hw_count,hw_price,hw_name,hw_img,hw_sales,hw_views,img_l,brand_name,img_r FROM hw WHERE hw_id=? 
+2020-09-15 09:56:02.276 DEBUG 1510 --- [http-nio-8080-exec-5] com.isoft.boot.dao.PhoneDao.selectById   : ==> Parameters: 7(Integer)
+2020-09-15 09:56:02.278 DEBUG 1510 --- [http-nio-8080-exec-5] com.isoft.boot.dao.PhoneDao.selectById   : <==      Total: 1
+2020-09-15 09:56:22.757  WARN 1510 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Invalid JSON input: Cannot deserialize value of type `java.lang.Integer` from String "Apple苹果iPhoneXS": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String "Apple苹果iPhoneXS": not a valid Integer value
+ at [Source: (PushbackInputStream); line: 1, column: 14] (through reference chain: com.isoft.boot.entity.Basket["basketids"])]
+2020-09-15 09:56:22.757  WARN 1510 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Invalid JSON input: Cannot deserialize value of type `java.lang.Integer` from String "未支付": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String "未支付": not a valid Integer value
+ at [Source: (PushbackInputStream); line: 1, column: 14] (through reference chain: com.isoft.boot.entity.Basket["basketids"])]
+2020-09-15 09:56:22.765 DEBUG 1510 --- [http-nio-8080-exec-3] com.isoft.boot.dao.BasketDao.updateById  : ==>  Preparing: UPDATE baskets SET status_ids=? WHERE basket_ids=? 
+2020-09-15 09:56:22.765 DEBUG 1510 --- [http-nio-8080-exec-1] com.isoft.boot.dao.BasketDao.updateById  : ==>  Preparing: UPDATE baskets SET status_ids=? WHERE basket_ids=? 
+2020-09-15 09:56:22.766 DEBUG 1510 --- [http-nio-8080-exec-1] com.isoft.boot.dao.BasketDao.updateById  : ==> Parameters: 已支付(String), 15(Integer)
+2020-09-15 09:56:22.766 DEBUG 1510 --- [http-nio-8080-exec-3] com.isoft.boot.dao.BasketDao.updateById  : ==> Parameters: 已支付(String), 6899(Integer)
+2020-09-15 09:56:22.770  WARN 1510 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Invalid JSON input: Cannot deserialize value of type `java.lang.Integer` from String "2020-09-15T09:55:57.000+0000": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String "2020-09-15T09:55:57.000+0000": not a valid Integer value
+ at [Source: (PushbackInputStream); line: 1, column: 14] (through reference chain: com.isoft.boot.entity.Basket["basketids"])]
+2020-09-15 09:56:22.771 DEBUG 1510 --- [http-nio-8080-exec-1] com.isoft.boot.dao.BasketDao.updateById  : <==    Updates: 1
+2020-09-15 09:56:22.771 DEBUG 1510 --- [http-nio-8080-exec-3] com.isoft.boot.dao.BasketDao.updateById  : <==    Updates: 0
+2020-09-15 09:56:22.772 DEBUG 1510 --- [http-nio-8080-exec-1] com.isoft.boot.dao.BasketDao.selectById  : ==>  Preparing: SELECT basket_ids,adddatetime,user_ids,hw_ids,part_ids,count_ids,status_ids,back_ids FROM baskets WHERE basket_ids=? 
+2020-09-15 09:56:22.774 DEBUG 1510 --- [http-nio-8080-exec-1] com.isoft.boot.dao.BasketDao.selectById  : ==> Parameters: 15(Integer)
+2020-09-15 09:56:22.775 DEBUG 1510 --- [http-nio-8080-exec-9] com.isoft.boot.dao.BasketDao.updateById  : ==>  Preparing: UPDATE baskets SET status_ids=? WHERE basket_ids=? 
+2020-09-15 09:56:22.775 DEBUG 1510 --- [http-nio-8080-exec-9] com.isoft.boot.dao.BasketDao.updateById  : ==> Parameters: 已支付(String), 2(Integer)
+2020-09-15 09:56:22.776 DEBUG 1510 --- [http-nio-8080-exec-1] com.isoft.boot.dao.BasketDao.selectById  : <==      Total: 1
+2020-09-15 09:56:22.777 DEBUG 1510 --- [http-nio-8080-exec-9] com.isoft.boot.dao.BasketDao.updateById  : <==    Updates: 0
+2020-09-15 09:56:25.164 DEBUG 1510 --- [http-nio-8080-exec-5] c.isoft.boot.dao.BasketDao.getByUserId   : ==>  Preparing: select * from baskets where user_ids = ? 
+2020-09-15 09:56:25.165 DEBUG 1510 --- [http-nio-8080-exec-5] c.isoft.boot.dao.BasketDao.getByUserId   : ==> Parameters: 4(Integer)
+2020-09-15 09:56:25.167 DEBUG 1510 --- [http-nio-8080-exec-5] c.isoft.boot.dao.BasketDao.getByUserId   : <==      Total: 1
+2020-09-15 09:56:25.170 DEBUG 1510 --- [http-nio-8080-exec-5] com.isoft.boot.dao.PhoneDao.selectById   : ==>  Preparing: SELECT hw_id,hw_count,hw_price,hw_name,hw_img,hw_sales,hw_views,img_l,brand_name,img_r FROM hw WHERE hw_id=? 
+2020-09-15 09:56:25.170 DEBUG 1510 --- [http-nio-8080-exec-5] com.isoft.boot.dao.PhoneDao.selectById   : ==> Parameters: 7(Integer)
+2020-09-15 09:56:25.173 DEBUG 1510 --- [http-nio-8080-exec-5] com.isoft.boot.dao.PhoneDao.selectById   : <==      Total: 1
+2020-09-15 09:56:47.539 DEBUG 1510 --- [http-nio-8080-exec-7] com.isoft.boot.dao.SysDao.checkName      : ==>  Preparing: select count(*) from sys where sys_name=? 
+2020-09-15 09:56:47.539 DEBUG 1510 --- [http-nio-8080-exec-7] com.isoft.boot.dao.SysDao.checkName      : ==> Parameters: aa(String)
+2020-09-15 09:56:47.549 DEBUG 1510 --- [http-nio-8080-exec-7] com.isoft.boot.dao.SysDao.checkName      : <==      Total: 1
+2020-09-15 09:56:47.551 DEBUG 1510 --- [http-nio-8080-exec-7] com.isoft.boot.dao.SysDao.login          : ==>  Preparing: select * from sys where sys_name=? and sys_pass=? 
+2020-09-15 09:56:47.551 DEBUG 1510 --- [http-nio-8080-exec-7] com.isoft.boot.dao.SysDao.login          : ==> Parameters: aa(String), 123(String)
+2020-09-15 09:56:47.552 DEBUG 1510 --- [http-nio-8080-exec-7] com.isoft.boot.dao.SysDao.login          : <==      Total: 1
+2020-09-15 09:57:01.465 DEBUG 1510 --- [http-nio-8080-exec-3] com.isoft.boot.dao.BrandDao.selectList   : ==>  Preparing: SELECT brand_id AS id,brand_img AS brandImg,brand_name,brand_desc AS brandDesc FROM brand 
+2020-09-15 09:57:01.466 DEBUG 1510 --- [http-nio-8080-exec-3] com.isoft.boot.dao.BrandDao.selectList   : ==> Parameters: 
+2020-09-15 09:57:01.468 DEBUG 1510 --- [http-nio-8080-exec-3] com.isoft.boot.dao.BrandDao.selectList   : <==      Total: 9
+2020-09-15 09:57:03.117 DEBUG 1510 --- [http-nio-8080-exec-3] com.isoft.boot.dao.UserDao.selectList    : ==>  Preparing: SELECT user_id,adddatetime,user_pass,user_tel,user_email,user_name FROM user 
+2020-09-15 09:57:03.118 DEBUG 1510 --- [http-nio-8080-exec-3] com.isoft.boot.dao.UserDao.selectList    : ==> Parameters: 
+2020-09-15 09:57:03.120 DEBUG 1510 --- [http-nio-8080-exec-3] com.isoft.boot.dao.UserDao.selectList    : <==      Total: 4
+2020-09-15 09:57:04.037 DEBUG 1510 --- [http-nio-8080-exec-10] com.isoft.boot.dao.SysDao.selectList     : ==>  Preparing: SELECT id,sys_pass,sys_role,sys_name,sys_img FROM sys 
+2020-09-15 09:57:04.037 DEBUG 1510 --- [http-nio-8080-exec-10] com.isoft.boot.dao.SysDao.selectList     : ==> Parameters: 
+2020-09-15 09:57:04.039 DEBUG 1510 --- [http-nio-8080-exec-10] com.isoft.boot.dao.SysDao.selectList     : <==      Total: 3
+2020-09-15 09:57:04.951 DEBUG 1510 --- [http-nio-8080-exec-1] com.isoft.boot.dao.NewsDao.selectList    : ==>  Preparing: SELECT news_id,news_title,news_from,news_up,news_time,news_detail,news_content,news_down FROM news 
+2020-09-15 09:57:04.952 DEBUG 1510 --- [http-nio-8080-exec-1] com.isoft.boot.dao.NewsDao.selectList    : ==> Parameters: 
+2020-09-15 09:57:04.954 DEBUG 1510 --- [http-nio-8080-exec-1] com.isoft.boot.dao.NewsDao.selectList    : <==      Total: 2
+2020-09-15 09:57:07.120 DEBUG 1510 --- [http-nio-8080-exec-4] com.isoft.boot.dao.BasketDao.selectAll   : ==>  Preparing: select * from baskets 
+2020-09-15 09:57:07.120 DEBUG 1510 --- [http-nio-8080-exec-4] com.isoft.boot.dao.BasketDao.selectAll   : ==> Parameters: 
+2020-09-15 09:57:07.123 DEBUG 1510 --- [http-nio-8080-exec-4] com.isoft.boot.dao.BasketDao.selectAll   : <==      Total: 8
+2020-09-15 09:57:07.142 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.BasketDao.selectById  : ==>  Preparing: SELECT basket_ids,adddatetime,user_ids,hw_ids,part_ids,count_ids,status_ids,back_ids FROM baskets WHERE basket_ids=? 
+2020-09-15 09:57:07.143 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.BasketDao.selectById  : ==> Parameters: 1(Integer)
+2020-09-15 09:57:07.145 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.BasketDao.selectById  : <==      Total: 1
+2020-09-15 09:57:07.147 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.UserDao.selectById    : ==>  Preparing: SELECT user_id,adddatetime,user_pass,user_tel,user_email,user_name FROM user WHERE user_id=? 
+2020-09-15 09:57:07.147 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.UserDao.selectById    : ==> Parameters: 1(Integer)
+2020-09-15 09:57:07.149 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.UserDao.selectById    : <==      Total: 1
+2020-09-15 09:57:07.151 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.PhoneDao.selectById   : ==>  Preparing: SELECT hw_id,hw_count,hw_price,hw_name,hw_img,hw_sales,hw_views,img_l,brand_name,img_r FROM hw WHERE hw_id=? 
+2020-09-15 09:57:07.152 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.PhoneDao.selectById   : ==> Parameters: 2(Integer)
+2020-09-15 09:57:07.153 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.PhoneDao.selectById   : <==      Total: 1
+2020-09-15 09:57:07.156 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.BasketDao.selectById  : ==>  Preparing: SELECT basket_ids,adddatetime,user_ids,hw_ids,part_ids,count_ids,status_ids,back_ids FROM baskets WHERE basket_ids=? 
+2020-09-15 09:57:07.156 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.BasketDao.selectById  : ==> Parameters: 3(Integer)
+2020-09-15 09:57:07.160 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.BasketDao.selectById  : <==      Total: 1
+2020-09-15 09:57:07.163 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.UserDao.selectById    : ==>  Preparing: SELECT user_id,adddatetime,user_pass,user_tel,user_email,user_name FROM user WHERE user_id=? 
+2020-09-15 09:57:07.163 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.UserDao.selectById    : ==> Parameters: 1(Integer)
+2020-09-15 09:57:07.165 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.UserDao.selectById    : <==      Total: 1
+2020-09-15 09:57:07.167 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.PhoneDao.selectById   : ==>  Preparing: SELECT hw_id,hw_count,hw_price,hw_name,hw_img,hw_sales,hw_views,img_l,brand_name,img_r FROM hw WHERE hw_id=? 
+2020-09-15 09:57:07.168 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.PhoneDao.selectById   : ==> Parameters: 2(Integer)
+2020-09-15 09:57:07.169 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.PhoneDao.selectById   : <==      Total: 1
+2020-09-15 09:57:07.173 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.BasketDao.selectById  : ==>  Preparing: SELECT basket_ids,adddatetime,user_ids,hw_ids,part_ids,count_ids,status_ids,back_ids FROM baskets WHERE basket_ids=? 
+2020-09-15 09:57:07.173 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.BasketDao.selectById  : ==> Parameters: 4(Integer)
+2020-09-15 09:57:07.175 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.BasketDao.selectById  : <==      Total: 1
+2020-09-15 09:57:07.179 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.UserDao.selectById    : ==>  Preparing: SELECT user_id,adddatetime,user_pass,user_tel,user_email,user_name FROM user WHERE user_id=? 
+2020-09-15 09:57:07.179 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.UserDao.selectById    : ==> Parameters: 1(Integer)
+2020-09-15 09:57:07.181 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.UserDao.selectById    : <==      Total: 1
+2020-09-15 09:57:07.183 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.PartDao.selectById    : ==>  Preparing: SELECT part_id,part_name,part_sales,img_l,part_img,part_price,img_r,part_desc,part_count FROM part WHERE part_id=? 
+2020-09-15 09:57:07.184 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.PartDao.selectById    : ==> Parameters: 7(Integer)
+2020-09-15 09:57:07.189 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.PartDao.selectById    : <==      Total: 1
+2020-09-15 09:57:07.191 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.BasketDao.selectById  : ==>  Preparing: SELECT basket_ids,adddatetime,user_ids,hw_ids,part_ids,count_ids,status_ids,back_ids FROM baskets WHERE basket_ids=? 
+2020-09-15 09:57:07.192 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.BasketDao.selectById  : ==> Parameters: 8(Integer)
+2020-09-15 09:57:07.194 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.BasketDao.selectById  : <==      Total: 1
+2020-09-15 09:57:07.196 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.UserDao.selectById    : ==>  Preparing: SELECT user_id,adddatetime,user_pass,user_tel,user_email,user_name FROM user WHERE user_id=? 
+2020-09-15 09:57:07.196 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.UserDao.selectById    : ==> Parameters: 2(Integer)
+2020-09-15 09:57:07.197 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.UserDao.selectById    : <==      Total: 1
+2020-09-15 09:57:07.199 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.PhoneDao.selectById   : ==>  Preparing: SELECT hw_id,hw_count,hw_price,hw_name,hw_img,hw_sales,hw_views,img_l,brand_name,img_r FROM hw WHERE hw_id=? 
+2020-09-15 09:57:07.199 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.PhoneDao.selectById   : ==> Parameters: 2(Integer)
+2020-09-15 09:57:07.200 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.PhoneDao.selectById   : <==      Total: 1
+2020-09-15 09:57:07.203 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.BasketDao.selectById  : ==>  Preparing: SELECT basket_ids,adddatetime,user_ids,hw_ids,part_ids,count_ids,status_ids,back_ids FROM baskets WHERE basket_ids=? 
+2020-09-15 09:57:07.203 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.BasketDao.selectById  : ==> Parameters: 9(Integer)
+2020-09-15 09:57:07.204 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.BasketDao.selectById  : <==      Total: 1
+2020-09-15 09:57:07.206 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.UserDao.selectById    : ==>  Preparing: SELECT user_id,adddatetime,user_pass,user_tel,user_email,user_name FROM user WHERE user_id=? 
+2020-09-15 09:57:07.206 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.UserDao.selectById    : ==> Parameters: 2(Integer)
+2020-09-15 09:57:07.207 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.UserDao.selectById    : <==      Total: 1
+2020-09-15 09:57:07.209 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.PartDao.selectById    : ==>  Preparing: SELECT part_id,part_name,part_sales,img_l,part_img,part_price,img_r,part_desc,part_count FROM part WHERE part_id=? 
+2020-09-15 09:57:07.209 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.PartDao.selectById    : ==> Parameters: 4(Integer)
+2020-09-15 09:57:07.210 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.PartDao.selectById    : <==      Total: 1
+2020-09-15 09:57:07.212 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.BasketDao.selectById  : ==>  Preparing: SELECT basket_ids,adddatetime,user_ids,hw_ids,part_ids,count_ids,status_ids,back_ids FROM baskets WHERE basket_ids=? 
+2020-09-15 09:57:07.213 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.BasketDao.selectById  : ==> Parameters: 11(Integer)
+2020-09-15 09:57:07.214 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.BasketDao.selectById  : <==      Total: 1
+2020-09-15 09:57:07.216 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.UserDao.selectById    : ==>  Preparing: SELECT user_id,adddatetime,user_pass,user_tel,user_email,user_name FROM user WHERE user_id=? 
+2020-09-15 09:57:07.216 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.UserDao.selectById    : ==> Parameters: 2(Integer)
+2020-09-15 09:57:07.218 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.UserDao.selectById    : <==      Total: 1
+2020-09-15 09:57:07.220 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.PhoneDao.selectById   : ==>  Preparing: SELECT hw_id,hw_count,hw_price,hw_name,hw_img,hw_sales,hw_views,img_l,brand_name,img_r FROM hw WHERE hw_id=? 
+2020-09-15 09:57:07.220 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.PhoneDao.selectById   : ==> Parameters: 4(Integer)
+2020-09-15 09:57:07.221 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.PhoneDao.selectById   : <==      Total: 1
+2020-09-15 09:57:07.223 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.BasketDao.selectById  : ==>  Preparing: SELECT basket_ids,adddatetime,user_ids,hw_ids,part_ids,count_ids,status_ids,back_ids FROM baskets WHERE basket_ids=? 
+2020-09-15 09:57:07.223 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.BasketDao.selectById  : ==> Parameters: 12(Integer)
+2020-09-15 09:57:07.224 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.BasketDao.selectById  : <==      Total: 1
+2020-09-15 09:57:07.225 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.UserDao.selectById    : ==>  Preparing: SELECT user_id,adddatetime,user_pass,user_tel,user_email,user_name FROM user WHERE user_id=? 
+2020-09-15 09:57:07.226 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.UserDao.selectById    : ==> Parameters: 2(Integer)
+2020-09-15 09:57:07.227 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.UserDao.selectById    : <==      Total: 1
+2020-09-15 09:57:07.228 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.PhoneDao.selectById   : ==>  Preparing: SELECT hw_id,hw_count,hw_price,hw_name,hw_img,hw_sales,hw_views,img_l,brand_name,img_r FROM hw WHERE hw_id=? 
+2020-09-15 09:57:07.229 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.PhoneDao.selectById   : ==> Parameters: 4(Integer)
+2020-09-15 09:57:07.229 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.PhoneDao.selectById   : <==      Total: 1
+2020-09-15 09:57:07.231 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.BasketDao.selectById  : ==>  Preparing: SELECT basket_ids,adddatetime,user_ids,hw_ids,part_ids,count_ids,status_ids,back_ids FROM baskets WHERE basket_ids=? 
+2020-09-15 09:57:07.231 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.BasketDao.selectById  : ==> Parameters: 15(Integer)
+2020-09-15 09:57:07.232 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.BasketDao.selectById  : <==      Total: 1
+2020-09-15 09:57:07.234 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.UserDao.selectById    : ==>  Preparing: SELECT user_id,adddatetime,user_pass,user_tel,user_email,user_name FROM user WHERE user_id=? 
+2020-09-15 09:57:07.234 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.UserDao.selectById    : ==> Parameters: 4(Integer)
+2020-09-15 09:57:07.235 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.UserDao.selectById    : <==      Total: 1
+2020-09-15 09:57:07.236 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.PhoneDao.selectById   : ==>  Preparing: SELECT hw_id,hw_count,hw_price,hw_name,hw_img,hw_sales,hw_views,img_l,brand_name,img_r FROM hw WHERE hw_id=? 
+2020-09-15 09:57:07.236 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.PhoneDao.selectById   : ==> Parameters: 7(Integer)
+2020-09-15 09:57:07.237 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.PhoneDao.selectById   : <==      Total: 1
+2020-09-15 09:57:09.052 DEBUG 1510 --- [http-nio-8080-exec-7] com.isoft.boot.dao.PartDao.selectList    : ==>  Preparing: SELECT part_id,part_name,part_sales,img_l,part_img,part_price,img_r,part_desc,part_count FROM part 
+2020-09-15 09:57:09.052 DEBUG 1510 --- [http-nio-8080-exec-7] com.isoft.boot.dao.PartDao.selectList    : ==> Parameters: 
+2020-09-15 09:57:09.054 DEBUG 1510 --- [http-nio-8080-exec-7] com.isoft.boot.dao.PartDao.selectList    : <==      Total: 9
+2020-09-15 09:57:18.345 DEBUG 1510 --- [http-nio-8080-exec-4] com.isoft.boot.dao.BrandDao.selectList   : ==>  Preparing: SELECT brand_id AS id,brand_img AS brandImg,brand_name,brand_desc AS brandDesc FROM brand 
+2020-09-15 09:57:18.345 DEBUG 1510 --- [http-nio-8080-exec-4] com.isoft.boot.dao.BrandDao.selectList   : ==> Parameters: 
+2020-09-15 09:57:18.348 DEBUG 1510 --- [http-nio-8080-exec-4] com.isoft.boot.dao.BrandDao.selectList   : <==      Total: 9
+2020-09-15 09:58:00.644 DEBUG 1510 --- [http-nio-8080-exec-10] com.isoft.boot.dao.UserDao.checkName     : ==>  Preparing: select count(*) from user where user_name=? 
+2020-09-15 09:58:00.644 DEBUG 1510 --- [http-nio-8080-exec-10] com.isoft.boot.dao.UserDao.checkName     : ==> Parameters: yuange(String)
+2020-09-15 09:58:00.645 DEBUG 1510 --- [http-nio-8080-exec-10] com.isoft.boot.dao.UserDao.checkName     : <==      Total: 1
+2020-09-15 09:58:00.647 DEBUG 1510 --- [http-nio-8080-exec-10] com.isoft.boot.dao.UserDao.login         : ==>  Preparing: SELECT * from user where user_name=? and user_pass=? 
+2020-09-15 09:58:00.648 DEBUG 1510 --- [http-nio-8080-exec-10] com.isoft.boot.dao.UserDao.login         : ==> Parameters: yuange(String), asd123(String)
+2020-09-15 09:58:00.649 DEBUG 1510 --- [http-nio-8080-exec-10] com.isoft.boot.dao.UserDao.login         : <==      Total: 1
+2020-09-15 09:58:00.651 DEBUG 1510 --- [http-nio-8080-exec-10] com.isoft.boot.dao.UserDao.selectList    : ==>  Preparing: SELECT user_id,adddatetime,user_pass,user_tel,user_email,user_name FROM user 
+2020-09-15 09:58:00.651 DEBUG 1510 --- [http-nio-8080-exec-10] com.isoft.boot.dao.UserDao.selectList    : ==> Parameters: 
+2020-09-15 09:58:00.652 DEBUG 1510 --- [http-nio-8080-exec-10] com.isoft.boot.dao.UserDao.selectList    : <==      Total: 4
+2020-09-15 09:58:08.424 DEBUG 1510 --- [http-nio-8080-exec-2] com.isoft.boot.dao.NewsDao.selectList    : ==>  Preparing: SELECT news_id,news_title,news_from,news_up,news_time,news_detail,news_content,news_down FROM news 
+2020-09-15 09:58:08.424 DEBUG 1510 --- [http-nio-8080-exec-2] com.isoft.boot.dao.NewsDao.selectList    : ==> Parameters: 
+2020-09-15 09:58:08.426 DEBUG 1510 --- [http-nio-8080-exec-2] com.isoft.boot.dao.NewsDao.selectList    : <==      Total: 2
+2020-09-15 09:58:15.350 DEBUG 1510 --- [http-nio-8080-exec-5] com.isoft.boot.dao.NewsDao.selectById    : ==>  Preparing: SELECT news_id,news_title,news_from,news_up,news_time,news_detail,news_content,news_down FROM news WHERE news_id=? 
+2020-09-15 09:58:15.350 DEBUG 1510 --- [http-nio-8080-exec-5] com.isoft.boot.dao.NewsDao.selectById    : ==> Parameters: 1(Integer)
+2020-09-15 09:58:15.351 DEBUG 1510 --- [http-nio-8080-exec-5] com.isoft.boot.dao.NewsDao.selectById    : <==      Total: 1
+2020-09-15 09:58:33.528 DEBUG 1510 --- [http-nio-8080-exec-1] com.isoft.boot.dao.PartDao.selectList    : ==>  Preparing: SELECT part_id,part_name,part_sales,img_l,part_img,part_price,img_r,part_desc,part_count FROM part WHERE (part_name LIKE ?) 
+2020-09-15 09:58:33.528 DEBUG 1510 --- [http-nio-8080-exec-1] com.isoft.boot.dao.PartDao.selectList    : ==> Parameters: %%(String)
+2020-09-15 09:58:33.532 DEBUG 1510 --- [http-nio-8080-exec-1] com.isoft.boot.dao.PartDao.selectList    : <==      Total: 9
+2020-09-15 09:58:36.384 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.PartDao.selectById    : ==>  Preparing: SELECT part_id,part_name,part_sales,img_l,part_img,part_price,img_r,part_desc,part_count FROM part WHERE part_id=? 
+2020-09-15 09:58:36.385 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.PartDao.selectById    : ==> Parameters: 1(Integer)
+2020-09-15 09:58:36.388 DEBUG 1510 --- [http-nio-8080-exec-8] com.isoft.boot.dao.PartDao.selectById    : <==      Total: 1
+2020-09-15 09:58:36.391 DEBUG 1510 --- [http-nio-8080-exec-9] c.isoft.boot.dao.BasketDao.selectBack2   : ==>  Preparing: select * from baskets where part_ids = ? 
+2020-09-15 09:58:36.391 DEBUG 1510 --- [http-nio-8080-exec-9] c.isoft.boot.dao.BasketDao.selectBack2   : ==> Parameters: 1(Integer)
+2020-09-15 09:58:36.392 DEBUG 1510 --- [http-nio-8080-exec-9] c.isoft.boot.dao.BasketDao.selectBack2   : <==      Total: 0
+2020-09-15 09:58:38.771 DEBUG 1510 --- [http-nio-8080-exec-6] com.isoft.boot.dao.PartDao.selectById    : ==>  Preparing: SELECT part_id,part_name,part_sales,img_l,part_img,part_price,img_r,part_desc,part_count FROM part WHERE part_id=? 
+2020-09-15 09:58:38.771 DEBUG 1510 --- [http-nio-8080-exec-8] c.isoft.boot.dao.BasketDao.selectBack2   : ==>  Preparing: select * from baskets where part_ids = ? 
+2020-09-15 09:58:38.771 DEBUG 1510 --- [http-nio-8080-exec-6] com.isoft.boot.dao.PartDao.selectById    : ==> Parameters: 1(Integer)
+2020-09-15 09:58:38.771 DEBUG 1510 --- [http-nio-8080-exec-8] c.isoft.boot.dao.BasketDao.selectBack2   : ==> Parameters: 1(Integer)
+2020-09-15 09:58:38.772 DEBUG 1510 --- [http-nio-8080-exec-8] c.isoft.boot.dao.BasketDao.selectBack2   : <==      Total: 0
+2020-09-15 09:58:38.774 DEBUG 1510 --- [http-nio-8080-exec-6] com.isoft.boot.dao.PartDao.selectById    : <==      Total: 1
+2020-09-15 09:58:46.421 DEBUG 1510 --- [http-nio-8080-exec-8] c.isoft.boot.dao.BasketDao.selectBack2   : ==>  Preparing: select * from baskets where part_ids = ? 
+2020-09-15 09:58:46.421 DEBUG 1510 --- [http-nio-8080-exec-1] com.isoft.boot.dao.PartDao.selectById    : ==>  Preparing: SELECT part_id,part_name,part_sales,img_l,part_img,part_price,img_r,part_desc,part_count FROM part WHERE part_id=? 
+2020-09-15 09:58:46.422 DEBUG 1510 --- [http-nio-8080-exec-1] com.isoft.boot.dao.PartDao.selectById    : ==> Parameters: 4(Integer)
+2020-09-15 09:58:46.422 DEBUG 1510 --- [http-nio-8080-exec-8] c.isoft.boot.dao.BasketDao.selectBack2   : ==> Parameters: 4(Integer)
+2020-09-15 09:58:46.423 DEBUG 1510 --- [http-nio-8080-exec-8] c.isoft.boot.dao.BasketDao.selectBack2   : <==      Total: 1
+2020-09-15 09:58:46.423 DEBUG 1510 --- [http-nio-8080-exec-1] com.isoft.boot.dao.PartDao.selectById    : <==      Total: 1
+2020-09-15 09:58:51.242 DEBUG 1510 --- [http-nio-8080-exec-3] com.isoft.boot.dao.PartDao.selectById    : ==>  Preparing: SELECT part_id,part_name,part_sales,img_l,part_img,part_price,img_r,part_desc,part_count FROM part WHERE part_id=? 
+2020-09-15 09:58:51.242 DEBUG 1510 --- [http-nio-8080-exec-1] c.isoft.boot.dao.BasketDao.selectBack2   : ==>  Preparing: select * from baskets where part_ids = ? 
+2020-09-15 09:58:51.242 DEBUG 1510 --- [http-nio-8080-exec-3] com.isoft.boot.dao.PartDao.selectById    : ==> Parameters: 4(Integer)
+2020-09-15 09:58:51.242 DEBUG 1510 --- [http-nio-8080-exec-1] c.isoft.boot.dao.BasketDao.selectBack2   : ==> Parameters: 4(Integer)
+2020-09-15 09:58:51.243 DEBUG 1510 --- [http-nio-8080-exec-3] com.isoft.boot.dao.PartDao.selectById    : <==      Total: 1
+2020-09-15 09:58:51.244 DEBUG 1510 --- [http-nio-8080-exec-1] c.isoft.boot.dao.BasketDao.selectBack2   : <==      Total: 1
+2020-09-15 09:59:18.427 DEBUG 1510 --- [http-nio-8080-exec-9] com.isoft.boot.dao.PhoneDao.selectList   : ==>  Preparing: SELECT hw_id,hw_count,hw_price,hw_name,hw_img,hw_sales,hw_views,img_l,brand_name,img_r FROM hw WHERE (brand_name LIKE ?) 
+2020-09-15 09:59:18.427 DEBUG 1510 --- [http-nio-8080-exec-9] com.isoft.boot.dao.PhoneDao.selectList   : ==> Parameters: %%(String)
+2020-09-15 09:59:18.430 DEBUG 1510 --- [http-nio-8080-exec-9] com.isoft.boot.dao.PhoneDao.selectList   : <==      Total: 12
+2020-09-15 09:59:19.590 DEBUG 1510 --- [http-nio-8080-exec-10] com.isoft.boot.dao.PhoneDao.selectList   : ==>  Preparing: SELECT hw_id,hw_count,hw_price,hw_name,hw_img,hw_sales,hw_views,img_l,brand_name,img_r FROM hw WHERE (brand_name LIKE ?) 
+2020-09-15 09:59:19.591 DEBUG 1510 --- [http-nio-8080-exec-10] com.isoft.boot.dao.PhoneDao.selectList   : ==> Parameters: %%(String)
+2020-09-15 09:59:19.593 DEBUG 1510 --- [http-nio-8080-exec-10] com.isoft.boot.dao.PhoneDao.selectList   : <==      Total: 12
+2020-09-15 09:59:21.400 DEBUG 1510 --- [http-nio-8080-exec-6] com.isoft.boot.dao.PhoneDao.selectList   : ==>  Preparing: SELECT hw_id,hw_count,hw_price,hw_name,hw_img,hw_sales,hw_views,img_l,brand_name,img_r FROM hw WHERE (brand_name LIKE ?) 
+2020-09-15 09:59:21.400 DEBUG 1510 --- [http-nio-8080-exec-6] com.isoft.boot.dao.PhoneDao.selectList   : ==> Parameters: %%(String)
+2020-09-15 09:59:21.402 DEBUG 1510 --- [http-nio-8080-exec-6] com.isoft.boot.dao.PhoneDao.selectList   : <==      Total: 12
+2020-09-15 09:59:21.462 DEBUG 1510 --- [http-nio-8080-exec-9] com.isoft.boot.dao.PhoneDao.selectList   : ==>  Preparing: SELECT hw_id,hw_count,hw_price,hw_name,hw_img,hw_sales,hw_views,img_l,brand_name,img_r FROM hw WHERE (brand_name LIKE ?) 
+2020-09-15 09:59:21.462 DEBUG 1510 --- [http-nio-8080-exec-9] com.isoft.boot.dao.PhoneDao.selectList   : ==> Parameters: %%(String)
+2020-09-15 09:59:21.464 DEBUG 1510 --- [http-nio-8080-exec-9] com.isoft.boot.dao.PhoneDao.selectList   : <==      Total: 12

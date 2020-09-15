@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>最新手机资讯</title>
+    <!--新 Bootstrap 核心 CSS 文件 -->
+
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+    <style>
+        .mob {
+            width: 1200px;
+            height: 60px;
+            margin: 0 auto;
+        }
+        .header {
+            position: relative;
+            height: 38px;
+            width: 1200px;
+            margin: 0 auto 5px;
+        }
+        .header_center {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            height: 38px;
+            width: 303px;
+            transform: translateX(-50%);
+        }
+    </style>
+    <script src="js/newsphone.js"></script>
+</head>
+<body>
+<div class="mob">
+    <h1 style="float: left">手机资讯</h1>
+</div>
+
+<div class="header">
+    <div class="header_center">
+        <input  style="width: 200px;
+        height: 38px;
+        line-height: 38px;
+        border: 1px solid darkseagreen;
+       float: left" id="brand" class="form-control"
+                placeholder="请输入要搜索的资讯题目">
+        <button type="button" id="sousuo" class="btn btn-primary" style=" width: 103px;
+        height: 38px;
+       line-height: 28px;
+       color: #FFFFFF;
+       font-weight: 900;
+       border:none;
+       float: left;
+       outline: none ">搜索</button>
+    </div>
+   <!-- <button type="button" id="add" class="btn btn-info" style=" width: 120px;
+        height: 38px;
+       line-height: 28px;
+       color: #FFFFFF;
+       font-weight: 900;
+       border:none;
+       text-align: center;
+       float: right;
+       outline: none">添加资讯
+    </button>-->
+</div>
+
+
+                <div class="table-responsive">
+                    <table id="news"  class="table table-hover table-sm" style="width: 800px; margin: 0 auto">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>资讯题目</th>
+                            <th>资讯内容</th>
+                            <th>资讯来源</th>
+                            <th>添加时间</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                    <!--<nav aria-label="Page navigation" style="width: 800px; margin: 0 auto">
+                        <ul class="pagination" style=" position: relative; float: right; height: 34px; width: 80px;">
+
+                            <li style="position: absolute; top: 0; left: 0;">
+                                <a href="#" aria-label="Previous">
+                                    <span aria-hidden="true" id="page-">&laquo;</span>
+                                </a>
+                            </li>
+                            <div id="page">
+
+                            </div>
+                            <li style="position: absolute; top: 0; right: 0;">
+                                <a href="#" aria-label="Next">
+                                    <span aria-hidden="true" id="page+">&raquo;</span>
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </nav>--><nav aria-label="Page navigation">
+                    <ul class="pagination">
+
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true" id="page-">&laquo;</span>
+                            </a>
+                        </li>
+                        <div id="page">
+
+                        </div>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true" id="page+">&raquo;</span>
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </nav>
+                </div>
+
+</body>
+</html>

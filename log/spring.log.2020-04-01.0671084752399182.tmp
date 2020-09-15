@@ -1,0 +1,13 @@
+2020-04-02 12:59:32.359  INFO 30940 --- [main] com.isoft.boot.BootApplicationTests      : Starting BootApplicationTests on steamdeMBP.lan with PID 30940 (started by steampunk in /Users/steampunk/Desktop/Boot_Phone)
+2020-04-02 12:59:32.389  INFO 30940 --- [main] com.isoft.boot.BootApplicationTests      : No active profile set, falling back to default profiles: default
+2020-04-02 12:59:36.742  INFO 30940 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 12:59:36.974  INFO 30940 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-04-02 12:59:37.200  WARN 30940 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-04-02 12:59:37.527  INFO 30940 --- [main] com.isoft.boot.BootApplicationTests      : Started BootApplicationTests in 6.131 seconds (JVM running for 8.8)
+2020-04-02 12:59:38.159  INFO 30940 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-04-02 12:59:39.086 DEBUG 30940 --- [main] com.isoft.boot.dao.NewsDao.insert        : ==>  Preparing: INSERT INTO news ( news_title, news_from, news_content ) VALUES ( ?, ?, ? ) 
+2020-04-02 12:59:39.134 DEBUG 30940 --- [main] com.isoft.boot.dao.NewsDao.insert        : ==> Parameters: aaa(String), ccc(String), bbb(String)
+2020-04-02 12:59:39.140 DEBUG 30940 --- [main] com.isoft.boot.dao.NewsDao.insert        : <==    Updates: 1
+2020-04-02 12:59:39.198  INFO 30940 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-02 12:59:39.204  INFO 30940 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-04-02 12:59:39.211  INFO 30940 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>乐优手机商城管理系统</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Fontastic Custom icon font-->
+    <link rel="stylesheet" href="css/fontastic.css">
+    <!-- Google fonts - Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <!-- jQuery Circle-->
+    <link rel="stylesheet" href="css/grasp_mobile_progress_circle-1.0.0.min.css">
+    <!-- Custom Scrollbar-->
+    <link rel="stylesheet" href="vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="js/home.js"></script>
+
+
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <!-- Side Navbar -->
+    <nav class="side-navbar">
+      <div class="side-navbar-wrapper">
+        <!-- Sidebar Header    -->
+        <div class="sidenav-header d-flex align-items-center justify-content-center">
+          <!-- User Info-->
+          <div class="sidenav-header-inner text-center">
+            <div id="sys_img" style="border-radius: 50%;overflow: hidden;width: 50px;height: 50px">
+
+            </div>
+              <h2 class="h5" id="index" ></h2><span id="role"></span>
+              <h1 id="loginname"></h1>
+          </div>
+          <!-- Small Brand information, appears on minimized sidebar-->
+          <div class="sidenav-header-logo"><a href="index.html" class="brand-small text-center">
+            <strong>乐优手机商城</strong><strong class="text-primary">信息管理系统</strong></a></div>
+        </div>
+        <!-- Sidebar Navigation Menus-->
+        <div class="main-menu">
+          <h5 class="sidenav-heading">Main</h5>
+          <ul id="side-main-menu" class="side-menu list-unstyled">                  
+            <li class="active"><a href="index.html"> <i class="icon-home"></i>主页
+            </a></li>
+            <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse">
+              <i class="icon-interface-windows"></i>商品管理 </a>
+              <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
+                <li><a href="brand.html"> <i class="icon-form"></i>品牌管理
+                </a></li>
+                <li><a href="basket.html"> <i class="fa fa-bar-chart"></i>订单管理
+                </a></li>
+                <li><a href="phone.html"> <i class="icon-grid"></i>手机管理
+                </a></li>
+                <li><a href="part.html"> <i class="icon-screen"></i>配件管理
+                </a></li>
+              </ul>
+            </li>
+
+
+          </ul>
+        </div>
+        <div class="admin-menu">
+          <h5 class="sidenav-heading">Second</h5>
+          <ul id="side-admin-menu" class="side-menu list-unstyled">
+
+            <li><a href="user.html"> <i class="icon-interface-windows"></i>用户管理
+            </a></li>
+            <li><a href="sys.html"> <i class="icon-interface-windows"></i>管理员管理
+            </a></li>
+            <li><a href="news.html"> <i class="icon-flask"></i>资讯管理
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="page">
+      <!-- navbar-->
+      <header class="header">
+        <nav class="navbar">
+          <div class="container-fluid">
+            <div class="navbar-holder d-flex align-items-center justify-content-between">
+              <div class="navbar-header"><a id="toggle-btn" href="#" class="menu-btn"><i class="icon-bars"> </i></a><a href="index.html" class="navbar-brand">
+                  <div class="brand-text d-none d-md-inline-block"><span>乐优手机商城</span><strong
+                          class="text-primary">信息管理系统</strong></div></a></div>
+              <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
+
+                <!-- Log out-->
+                <li class="nav-item"><a href="../userlogin.html" class="nav-link logout"> <span
+                        class="d-none d-sm-inline-block">退出登陆</span><i
+                        class="fa fa-sign-out"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <section class="statistics">
+        <div class="container-fluid">
+          <div class="row d-flex">
+            <div class="col-lg-4">
+              <!-- Income-->
+              <div class="card income text-center">
+                <div class="icon"><i class="icon-line-chart"></i></div>
+                <div class="number">70,659,967部</div><strong class="text-primary">2019年度总销量</strong>
+                <p>本年度各类手机共计卖出量</p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <!-- Monthly Usage-->
+              <div class="card data-usage">
+                <h2 class="display h4">市场占比份额</h2>
+                <div class="row d-flex align-items-center">
+                  <div class="col-sm-6">
+                    <div id="progress-circle" class="d-flex align-items-center justify-content-center"></div>
+                  </div>
+                  <div class="col-sm-6"><strong class="text-primary">47.94%</strong><small>苹果品牌
+                  </small><span>33877106（部）</span></div>
+                </div>
+                <p>80%的手机为智能手机，苹果占据近半的市场 国产手机所占份额相近</p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <!-- User Actibity-->
+              <div class="card user-activity">
+                <h2 class="display h4">Avg Price(手机平均价格)</h2>
+                <div class="number">5596.125(元)</div>
+                <h3 class="h4 display"></h3>
+                <div class="progress">
+                  <div role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar bg-primary"></div>
+                </div>
+                <div class="page-statistics d-flex justify-content-between">
+                  <div
+                          class="page-statistics-left"><span>单件商品最高点击量</span><strong>23k
+                    +</strong></div>
+                  <div class="page-statistics-right"><span>网购好评率</span><strong>73.4%</strong></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Counts Section -->
+      <section class="dashboard-counts section-padding">
+        <div class="container-fluid" style="margin-top: 50px">
+          <div style="width: 100%;height: 400px;">
+            <div id="mainzhu" style="width: 800px;height:250px; display: inline-block";></div>
+            <div id="main" style="width: 442px;height:250px; display: inline-block";></div>
+          </div>
+          <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+
+          <script type="text/javascript">
+            // 基于准备好的dom，初始化echarts实例
+            var myChart = echarts.init(document.getElementById('main'));
+
+            myChart.setOption({
+              title: {
+                text: '手机品牌销量排行',
+                subtext: 'TOP10',
+                left: 'center'
+              },
+              tooltip: {
+                trigger: 'item',
+                formatter: '{a} <br/>{b} : {c} ({d}%)'
+              },
+              legend: {
+                orient: 'vertical',
+                left: 'left',
+                data: ['1+', 'APPLE', 'HUAWEI', 'OPPO', 'MI']
+              },
+              series : [
+
+                {
+                  name: '手机销量(部)',
+                  type: 'pie',    // 设置图表类型为饼图
+                  radius: '55%',  // 饼图的半径，外半径为可视区尺寸（容器高宽中较小一项）的 55% 长度。
+                  center: ['50%', '60%'],
+                  data:[          // 数据数组，name 为数据项名称，value 为数据项值
+                    {value:3200993, name:'1+'},
+                    {value:33877106, name:'APPLE'},
+                    {value:12746464, name:'HUAWEI'},
+                    {value:8053318, name:'OPPO'},
+                    {value:12782086, name:'MI'}
+                  ],
+                  emphasis: {
+                    itemStyle: {
+                      shadowBlur: 10,
+                      shadowOffsetX: 0,
+                      shadowColor: 'rgba(0, 0, 0, 0.5)'
+                    }
+                  }
+
+                }
+              ]
+            })
+          </script>
+          <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+
+          <script type="text/javascript">
+            // 基于准备好的dom，初始化echarts实例
+            var myChart = echarts.init(document.getElementById('mainzhu'));
+
+            // 指定图表的配置项和数据
+            var option = {
+              title: {
+                text: '手机销量Top10'
+              },
+              tooltip: {},
+              legend: {
+                data:['手机销量(部)']
+              },
+              xAxis: {
+                data: ["MI6","1+7","MI8","P30pro","mate10","iphone6s","iphone7","iphone8","iphonex","iphone11"]
+              },
+              yAxis: {},
+              series: [{
+                name: '手机销量(部)',
+                type: 'bar',
+                data: [6814414, 1667532, 5967672, 8012341, 4734123, 13423578,3432154,6757532,787943,8686754]
+              }]
+            };
+
+            // 使用刚指定的配置项和数据显示图表。
+            myChart.setOption(option);
+          </script>
+        </div>
+      </section>
+
+<!--      <div class="tlinks">Collect from <a href="http://www.cssmoban.com/"  title="网站模板">网站模板</a></div>-->
+
+
+
+    </div>
+    <!-- JavaScript files-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper.js/umd/popper.min.js"> </script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/grasp_mobile_progress_circle-1.0.0.min.js"></script>
+    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="vendor/jquery-validation/jquery.validate.min.js"></script>
+    <script src="vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/charts-home.js"></script>
+    <!-- Main File-->
+    <script src="js/front.js"></script>
+  </body>
+</html>

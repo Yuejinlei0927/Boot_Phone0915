@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>销量排行</title>
+    <script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
+</head>
+<body>
+<div style="width: 100%;height: 400px;">
+    <div id="main" style="width: 442px;height:400px; display: inline-block";></div>
+    <div id="mainzhu" style="width: 800px;height:400px; display: inline-block";></div>
+
+</div>
+<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+
+<script type="text/javascript">
+
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('main'));
+
+    myChart.setOption({
+        title: {
+            text: '手机品牌销量排行',
+            subtext: 'TOP10',
+            left: 'center'
+        },
+        tooltip: {
+            trigger: 'item',
+            formatter: '{a} <br/>{b} : {c} ({d}%)'
+        },
+        legend: {
+            orient: 'vertical',
+            left: 'left',
+            data: ['1+', 'APPLE', 'HUAWEI', 'OPPO', 'MI']
+        },
+        series : [
+
+            {
+                name: '手机销量(部)',
+                type: 'pie',    // 设置图表类型为饼图
+                radius: '55%',  // 饼图的半径，外半径为可视区尺寸（容器高宽中较小一项）的 55% 长度。
+                center: ['50%', '60%'],
+                data:[          // 数据数组，name 为数据项名称，value 为数据项值
+                    {value:3200993, name:'1+'},
+                    {value:33877106, name:'APPLE'},
+                    {value:12746464, name:'HUAWEI'},
+                    {value:8053318, name:'OPPO'},
+                    {value:12782086, name:'MI'}
+                ],
+                emphasis: {
+                    itemStyle: {
+                        shadowBlur: 10,
+                        shadowOffsetX: 0,
+                        shadowColor: 'rgba(0, 0, 0, 0.5)'
+                    }
+                }
+
+                }
+        ]
+    })
+</script>
+<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+
+<script type="text/javascript">
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('mainzhu'));
+
+    // 指定图表的配置项和数据
+    var option = {
+        title: {
+            text: '手机销量Top10'
+        },
+        tooltip: {},
+        legend: {
+            data:['手机销量(部)']
+        },
+        xAxis: {
+            data: ["MI6","1+7","MI8","P30pro","mate10","iphone6s","iphone7","iphone8","iphonex","iphone11"]
+        },
+        yAxis: {},
+        series: [{
+            name: '手机销量(部)',
+            type: 'bar',
+            data: [6814414, 1667532, 5967672, 8012341, 4734123, 13423578,3432154,6757532,787943,8686754]
+        }]
+    };
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+</script>
+</body>
+</html>

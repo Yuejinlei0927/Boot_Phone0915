@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+
+    <style>
+        span {
+            position: absolute;
+            width: 120px;
+            height: 30px;
+            bottom: 140px;
+            left: 220px;
+            border: 1px solid #ccc;
+        }
+        span ul {
+            padding-left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        span li {
+            list-style: none;
+            width: 32px;
+            height: 32px;
+            text-align: center;
+            line-height: 32px;
+        }
+        body{
+            background-image: url("img/abc.jpeg");
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            background-repeat:no-repeat;
+            background-size:100% 100%;
+
+            background-attachment: fixed;
+        }
+        form {
+            position: relative;
+        }
+        #yanzhengma {
+            position: absolute;
+            left: 126px;
+            bottom: 140px;
+            width: 80px;
+            padding-left: 1px;
+            border-radius: 5px;
+            height: 30px;
+            text-align: center;
+        }
+
+        input {
+            outline: none;
+            border: 1px solid #ccc;
+            padding-left: 10px;
+        }
+        p {
+            font-size:18px ;
+        }
+        div {
+            margin-top: 180px;
+        }
+        .zhanghao {
+            border-radius: 5px;
+            height:30px;width:222px;
+            font-size:12px;
+            margin-left: 28px;
+            transition: all 0.4s;
+        }
+        .zhanghao:focus {
+            transform: scale(1.1);
+        }
+        .mima {
+            border-radius: 5px;
+            height:30px;
+            width:222px;
+            font-size:12px;
+            margin-left: 28px;
+            transition: all 0.4s;
+        }
+        .mima:focus {
+            transform: scale(1.1);
+        }
+        .sel {
+            border-radius: 5px;
+            width: 222px;
+            margin-left: 123px;
+            transition: all 0.4s;
+        }
+        .sel:focus {
+            transform: scale(1.1);
+        }
+        .shenfen {
+            position: absolute;
+            left: 50px;
+            top: 10px;
+            width: 50px;
+            height: 30px;
+            font-size: 18px;
+        }
+        .yan {
+            position: absolute;
+            left: 41px;
+            width: 70px;
+            height: 30px;
+            font-size: 18px;
+            top: 53px;
+        }
+    </style>
+    <!--<script src="js/loginuser.js"></script>
+    <script src="js/login1.js"></script>-->
+    <script src="js/loginkind.js"></script>
+</head>
+<body>
+<h1>乐优手机商城</h1>
+<div style="text-align:center; vertical-align:center;width: 400px;height:400px;margin:10px 0px 0px 60%">
+    <form id="loginForm"
+          style="background-color: whitesmoke;width: 400px;height:400px;text-align:center;margin-top: 150px;border-radius: 10px">
+            <p style="padding: 20px 0">账户登录</p>
+        <div style="height: 30px; margin: 20px 0">
+            <p style=" width:100px; vertical-align: middle; display: inline;">账号</p>
+            <input  type="text" placeholder="请输入账号" id="loginname" name="loginname" class="zhanghao">
+        </div>
+        <div style="height: 30px; margin: 20px 0">
+            <p style=" width:100px; vertical-align: middle; display: inline;">密码</p>
+            <input type="password" placeholder="请输入密码" id="loginpass" name="loginpass" class="mima">
+        </div>
+        <div class="shenfen">身份</div>
+            <select id="sltkind" class="form-control sel">
+                <option >请选择</option>
+                <option value="1" >管理员</option>
+                <option value="2" >用户</option>
+            </select>
+        <div class="yan">验证码</div>
+        <input type="text" id="yanzhengma">
+        <span id="yanzheng">
+            <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            </ul>
+            </span>
+
+            <button type="button" class="btn btn-primary" id="btnloginkind" style="margin-top:
+            60px;width: 222px;margin-left: 75px">登录</button>
+        <br>
+        <br>
+        <br>
+            <p style="margin-left: 200px;font-size: 12px"><a href="regist.html">没有账号？立即注册</a></p>
+
+    </form>
+</div>
+
+</body>
+</html>

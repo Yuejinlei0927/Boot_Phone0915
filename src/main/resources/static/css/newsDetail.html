@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/newsDetail.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        h2 {
+            margin: 20px 0 0 30px;
+        }
+        .time {
+            position: relative;
+            height: 30px;
+            width: 100%;
+            line-height: 30px;
+        }
+        .time p {
+            position: absolute;
+            width: 70px;
+            top: 0;
+            right: 30%;
+            margin: 0;
+        }
+        .time-con {
+            box-sizing: border-box;
+            position: absolute;
+            top: 0;
+            right: 30%;
+            margin-right: -155px;
+            height: 100%;
+            width: 150px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 30px;
+        }
+        .con {
+            height: 400px;
+            width: 800px;
+            border: 1px solid #ccc;
+            margin: 20px auto;
+        }
+        .from {
+            width: 250px;
+            height: 30px;
+            margin-left: 65%;
+            margin-top: 10px;
+            line-height: 30px;
+        }
+        .from-con {
+            height: 30px;
+            width: 170px;
+            line-height: 30px;
+            float: right;
+            box-sizing: border-box;
+        }
+        .con h3 {
+            width: 800px;
+            height: 50px;
+            margin: 0;
+            box-sizing: border-box;
+            padding: 5px 10px;
+            line-height: 45px;
+            text-align: center;
+        }
+        .con-con {
+            width: 760px;
+            height: 350px;
+            margin: 0 auto;
+        }
+        .footer {
+            box-sizing: border-box;
+            height: 50px;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            padding-left: 750px;
+        }
+    </style>
+</head>
+<body>
+<h2>手机资讯详情</h2>
+<div class="time">
+    <p>发表时间:</p>
+    <div class="time-con" id="detail_time">
+
+    </div>
+</div>
+<div class="con" >
+    <h3 id="detail_title"></h3>
+    <div class="con-con"  id="detail_content">
+
+    </div>
+</div>
+<div class="from" >
+    资讯来源：
+    <div class="from-con" id="detail_from">
+
+    </div>
+</div>
+<div class="footer">
+    <img onclick="oka()" id="oka" src="img/111.png"
+         style="width: 50px;height: 50px; float: left; vertical-align: middle;margin: 0 15px">
+    <img onclick="noa()" id="noa" src="img/222.png"
+         style="width: 50px;height: 50px; margin: 0 15px; float: left; vertical-align: middle;">
+    <div id="spok" style="display: inline; align-self: center"><span>共有<span id="number1"></span>人点赞本条资讯</span></div>
+
+    <div id="spno" style="display: inline; align-self: center"><span>共有<span id="number2"></span>人踩了本条资讯</span></div>
+</div>
+</body>
+</html>
